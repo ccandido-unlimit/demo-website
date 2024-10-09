@@ -1,0 +1,49 @@
+/* App.css */
+/* Exemplo de um seletor mais específico */
+div.form-container {
+    background-color: #24272A; /* Cor de fundo do formulário */
+    margin: 150px 150px; /* Margem para centralizar o formulário */
+    margin-top: 5%;
+    margin-left: center;
+    width: 60%; /* Largura do formulário */
+    height: 40%; /* Altura do formulário */
+    border-radius: 25px; /* Bordas arredondadas */
+    padding: 30px; /* Espaçamento interno */
+}
+
+
+h2 {
+    color: white; /* Cor do texto do título */
+    text-align: center; /* Centraliza o título */
+}
+
+label {
+    display: block; /* Faz o rótulo ocupar toda a linha */
+    margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
+    color: white; /* Cor do texto do rótulo */
+}
+
+input, select {
+    width: auto; /* Faz os campos ocuparem toda a largura do formulário */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #130707; /* Borda do campo */
+    border-radius: 4px; /* Bordas arredondadas nos campos */
+    margin-bottom: 15px; /* Espaçamento abaixo dos campos */
+}
+
+.buttonContainer {
+    text-align: center; /* Centraliza o botão */
+}
+
+.buttonContainer button {
+    cursor: pointer;
+    padding: 10px 10px;
+    border: 1px solid #141618; /* Borda do botão */
+    border-radius: 5px; /* Bordas arredondadas no botão */
+    background-color: #C9F76E; /* Cor de fundo do botão */
+    color: black; /* Cor do texto do botão */
+}
+
+.buttonContainer button:hover {
+    background-color: #B8E67D; /* Cor do botão ao passar o mouse */
+}

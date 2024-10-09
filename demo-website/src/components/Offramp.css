@@ -1,0 +1,9 @@
+/* App.css */
+.form-container {
+    background: rgba(255, 255, 255, 0.9); /* Cor de fundo branca com leve transparência */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    margin: 20px 0; /* Margem para espaçamento entre os formulários */
+  }
+  

@@ -1,28 +1,35 @@
 import React, { useState } from 'react';
+import './App.css';
 import Onramp from './components/Onramp';
 import Offramp from './components/Offramp';
-import './App.css'; // Importe seus estilos globais, se necessário
 
-function App() {
-  const [showOnramp, setShowOnramp] = useState(true); // Estado para controlar qual formulário mostrar
+export default function App() {
+  const [isLightMode, setIsLightMode] = useState(true);
 
-  const toggleForm = () => {
-    setShowOnramp(!showOnramp); // Alterna entre os formulários
+  const handleToggleChange = () => {
+    setIsLightMode(prevMode => !prevMode);
   };
 
   return (
-    <div className="App">
-      <h1>Bem-vindo ao Aplicativo de Cripto</h1>
-      <div>
-        <button onClick={toggleForm}>
-          {showOnramp ? 'Switch to Offramp' : 'Switch to Onramp'}
-        </button>
+    <div className={isLightMode ? 'app light-mode' : 'app dark-mode'}>
+      <div className="sidebar">
+      <h3></h3>
       </div>
-      <div>
-        {showOnramp ? <Onramp /> : <Offramp />}
+      <div className="content">
+        <div className="toggle-container">
+          <label className="toggle">
+            <span role="img" aria-label="Moon">🌙</span>
+            <input type="checkbox" checked={isLightMode} onChange={handleToggleChange} />
+            <span className="slider"></span>
+            <span role="img" aria-label="Sun">☀️</span>
+          </label>
+        </div>
+        <div>
+        <Onramp />
+        <Offramp />
+        </div>
+       
       </div>
     </div>
   );
 }
-
-export default App;
